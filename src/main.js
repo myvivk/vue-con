@@ -3,10 +3,14 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import '@/assets/css/base.css'
+import MyServerHttp from '@/plugins/http.js'
 import App from './App'
 import router from './router'
 
 Vue.use(ElementUI)
+Vue.use(MyServerHttp)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
